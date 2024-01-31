@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+</head>
+<body>
+    <h2>Registered User List</h2>
+    <table style="border: 2px solid black;">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>UserName</th>
+        </tr>
+        </thead>
+        {% for user in users %}
+        <tbody>
+            <td>{{user[0]}}</td>
+            <td>{{user[1]}}</td>
+        </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    {% if registerd_message %}
+  <div class="alert alert-success">
+    {{ registered_message }}
+  </div>
+{% endif %}
+    <form action="/login" method="post">
+        <h1>Login</h1>
+        <label for="email">Email</label>
+        <input type="email" name="email" required><br><br>
+        <label for="password" id="password">password</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+
+</html>
